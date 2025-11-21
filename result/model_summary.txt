@@ -1,0 +1,166 @@
+============================================================
+MODEL SUMMARY
+============================================================
+
+Total Sets: 65
+Total Parameters: 3
+Total Variables: 28
+Total Constraints: 52
+Total Variable Elements: 2882032
+Total Constraint Elements: 3514656
+
+Set Names:
+  - t
+  - tm
+  - stf
+  - sit
+  - com
+  - com_type
+  - pro
+  - cost_type
+  - sit_tuples
+  - sit_tuples_ac
+  - sit_slackbus
+  - com_tuples
+  - pro_tuples
+  - com_stock
+  - com_supim
+  - com_demand
+  - com_env
+  - pro_cap_new_block_tuples
+  - pro_inv_cost_fix_tuples
+  - pro_input_tuples
+  - pro_output_tuples
+  - pro_output_tuples_reactive
+  - pro_rampupgrad_tuples
+  - pro_rampdowngrad_tuples
+  - pro_decommissionable_tuples
+  - tra
+  - tra_tuples
+  - tra_decommissionable_tuples
+  - tra_tuples_dc
+  - tra_tuples_ac
+  - tra_tuples_kont
+  - tra_tuples_ront
+  - tra_tuples_ac_dc
+  - tra_block_tuples
+  - tra_tuples_tp
+  - tra_tuples_hp
+  - tra_tuples_bev
+  - tra_tuples_reac
+  - sites_ac
+  - sto
+  - sto_tuples
+  - sto_init_bound_tuples
+  - sto_ep_ratio_tuples
+  - sto_block_c_tuples
+  - sto_block_p_tuples
+  - sto_decommissionable_tuples
+  - com_sell
+  - com_buy
+  - t_startofperiod
+  - t_endofperiod
+  - pro_timevar_output_tuples
+  - pro_on_off_tuples
+  - pro_on_off_input_tuples
+  - pro_on_off_output_tuples
+  - pro_partial_on_off_tuples
+  - pro_partial_on_off_input_tuples
+  - pro_partial_on_off_output_tuples
+  - pro_start_up_tuples
+  - pro_rampup_start_tuples
+  - pro_minfraction_tuples
+  - pro_minfraction_output_tuples
+  - pro_partial_tuples
+  - pro_partial_input_tuples
+  - pro_partial_output_tuples
+  - pro_availability_tuples
+
+Parameter Names:
+  - dt
+  - obj
+  - weight
+
+Variable Names:
+  - costs: 8 total, 3 non-zero
+  - e_co_stock: 255360 total, 0 non-zero
+  - cap_pro_new: 10 total, 2 non-zero
+  - cap_decommissioned: 0 total, 0 non-zero
+  - tau_pro: 26890 total, 12342 non-zero
+  - e_pro_in: 24192 total, 9654 non-zero
+  - e_pro_out: 26880 total, 12342 non-zero
+  - pro_cap_unit: 0 total, 0 non-zero
+  - pro_cap_expands: 6 total, 0 non-zero
+  - cap_tra_new: 146 total, 3 non-zero
+  - cap_tra_decommissioned: 44 total, 3 non-zero
+  - cap_tra_unit: 146 total, 44 non-zero
+  - e_tra_abs: 0 total, 0 non-zero
+  - e_tra_in: 731136 total, 217663 non-zero
+  - e_tra_out: 731136 total, 217663 non-zero
+  - voltage_angle: 118272 total, 0 non-zero
+  - voltage_squared: 118272 total, 118272 non-zero
+  - cap_sto_c_new: 42 total, 2 non-zero
+  - cap_sto_p_new: 42 total, 2 non-zero
+  - cap_sto_c_decommissioned: 0 total, 0 non-zero
+  - cap_sto_p_decommissioned: 0 total, 0 non-zero
+  - sto_cap_c_unit: 0 total, 0 non-zero
+  - sto_cap_p_unit: 0 total, 0 non-zero
+  - e_sto_in: 112896 total, 22 non-zero
+  - e_sto_out: 112896 total, 23 non-zero
+  - e_sto_con: 112938 total, 2808 non-zero
+  - e_co_sell: 255360 total, 0 non-zero
+  - e_co_buy: 255360 total, 2688 non-zero
+
+Constraint Names:
+  - def_cap_tra_new: 146 constraints
+  - def_transmission_output: 731136 constraints
+  - def_dc_power_flow: 0 constraints
+  - def_ac_power_flow: 112896 constraints
+  - def_voltage_limit_upper: 118272 constraints
+  - def_voltage_limit_lower: 118272 constraints
+  - def_angle_limit: 0 constraints
+  - e_tra_abs1: 0 constraints
+  - res_transmission_input_by_capacity: 53760 constraints
+  - res_transmission_input_by_apparent_power_diamond_2: 338688 constraints
+  - res_transmission_input_by_apparent_power_diamond_3: 338688 constraints
+  - res_transmission_input_by_apparent_power_diamond_6: 338688 constraints
+  - res_transmission_input_by_apparent_power_diamond_7: 338688 constraints
+  - def_single_ont: 1 constraints
+  - def_single_ac_cable: 126 constraints
+  - res_transmission_capacity: 146 constraints
+  - res_transmission_symmetry: 20 constraints
+  - def_new_cap_sto_c: 0 constraints
+  - def_new_cap_sto_p: 0 constraints
+  - def_storage_state: 112896 constraints
+  - res_storage_input_by_power: 112896 constraints
+  - res_storage_output_by_power: 112896 constraints
+  - res_storage_state_by_capacity: 112938 constraints
+  - res_storage_power: 42 constraints
+  - res_storage_capacity: 42 constraints
+  - def_initial_storage_state: 0 constraints
+  - res_storage_state_cyclicity: 42 constraints
+  - def_storage_energy_power_ratio: 42 constraints
+  - res_sell_step: 2688 constraints
+  - res_sell_total: 1 constraints
+  - res_buy_step: 2688 constraints
+  - res_buy_total: 1 constraints
+  - res_storage_state_cyclicity_typeperiod: 672 constraints
+  - res_vertex: 239232 constraints
+  - res_stock_step: 233856 constraints
+  - res_stock_total: 87 constraints
+  - res_env_step: 0 constraints
+  - res_env_total: 0 constraints
+  - def_process_input: 24192 constraints
+  - def_process_output: 26880 constraints
+  - def_process_output_reactive1: 0 constraints
+  - def_process_output_reactive2: 0 constraints
+  - def_intermittent_supply: 16128 constraints
+  - res_process_throughput_by_capacity: 26880 constraints
+  - res_process_rampdown: 0 constraints
+  - res_process_ramp_up: 0 constraints
+  - res_process_capacity: 10 constraints
+  - res_process_capacity_fixed_inv_cost_lower: 6 constraints
+  - res_process_capacity_fixed_inv_cost_upper: 6 constraints
+  - def_new_capacity_units: 0 constraints
+  - def_costs: 8 constraints
+  - res_global_co2_limit: 0 constraints
